@@ -2,9 +2,9 @@
     <mat-form-field>
       <input matInput placeholder="Wprowadź komentarz zamknięcia sprawy" [formControl]="close" required>
       <mat-error *ngIf="close.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field>
+    
     <br/>
-    <mat-form-field>
+    
         <mat-select placeholder="Wybierz powód zamknięcia:">
           <mat-option value="normal">Zamknięcie po zakończeniu</mat-option>
           <mat-option value="client">Zamknięcie na wniosek klienta</mat-option>
