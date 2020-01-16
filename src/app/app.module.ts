@@ -17,6 +17,15 @@ import { GenerateDocumentComponent } from './generate-document/generate-document
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { CloseCaseComponent } from './close-case/close-case.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule, MatSidenavModule, MatListModule} from  '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { ErrorComponent } from './error/error.component';
+import { ContactTypesComponent } from './contact-types/contact-types.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { LegalEntitiesDataComponent } from './legal-entities-data/legal-entities-data.component';
+import { LegalEntityTypesComponent } from './legal-entity-types/legal-entity-types.component';
+import { ContractTypesComponent } from './contract-types/contract-types.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +35,19 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     CourseOfActionComponent,
     AddDocumentComponent,
     GenerateDocumentComponent,
-    CloseCaseComponent
+    CloseCaseComponent,
+    NavbarComponent,
+    ErrorComponent,
+    ContactTypesComponent,
+    ContactsComponent,
+    LegalEntitiesDataComponent,
+    LegalEntityTypesComponent,
+    ContractTypesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MatTabsModule,
     MatTableModule,
     MatButtonModule,
@@ -40,7 +57,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     FormsModule, ReactiveFormsModule,
     MatSelectModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

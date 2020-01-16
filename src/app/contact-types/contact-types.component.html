@@ -1,0 +1,23 @@
+<div class='card'>
+    <div class='card-header'>
+      Typy kontaktów
+    </div>
+    <div class='card-body'>
+      <div class='table-responsive'>
+        <table class='table' *ngIf='contactTypes && contactTypes.length'>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let contactType of contactTypes'>
+              <td>{{contactType.id}}</td>
+              <td>{{contactType.name}}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+    </div>
+  </div>
