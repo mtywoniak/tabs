@@ -1,30 +1,29 @@
 <mat-toolbar>
   <mat-toolbar-row>
+    <img src="assets/brand.png" style="height: inherit;"/>
     <button id="menuButton" mat-icon-button>
       <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-    </button>
-    <h1>LFMS</h1>
+    </button>    
     <span class="menu-spacer"></span>
     <div>
-      <a mat-button [routerLink]="'/cases'"> Cases </a>
-      <a mat-button [routerLink]="'/contactTypes'"> Contact Types </a>
-      <a mat-button [routerLink]="'/contacts'"> Contacts </a>
-      <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
-      <a mat-button [routerLink]="'/activities'"> Activities </a>
-      <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
+      <a mat-button [routerLink]="'/a'"> Strona główna </a>
+      <a mat-button [routerLink]="'/a'"> Kontakty </a>
+      <a mat-button [routerLink]="'/cases'"> Sprawy </a>
+      <a mat-button [routerLink]="'/a'"> Firmy klienckie </a>
+      <a mat-button [routerLink]="'/a'"> Windykacja masowa </a>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="'/accounts'"> Accounts </a>
-      <a mat-list-item [routerLink]="'/create-account'"> Create Account </a>
-      <a mat-list-item [routerLink]="'/contacts'"> Contacts </a>
-      <a mat-list-item [routerLink]="'/create-contact'"> Create Contact </a>
-      <a mat-list-item [routerLink]="'/activities'"> Activities </a>
-      <a mat-list-item [routerLink]="'/create-activity'"> Create Activity </a>
-      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+      <a mat-list-item [routerLink]="'/a'"> Accounts </a>
+      <a mat-list-item [routerLink]="'/a'"> Create Account </a>
+      <a mat-list-item [routerLink]="'/a'"> Contacts </a>
+      <a mat-list-item [routerLink]="'/a'"> Create Contact </a>
+      <a mat-list-item [routerLink]="'/a'"> Activities </a>
+      <a mat-list-item [routerLink]="'/a'"> Create Activity </a>
+      <a mat-list-item (click)="sidenav.toggle()" mat-list-item>Close</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
